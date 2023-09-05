@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import RangeSlider from './RangeSlider';
+import styles from './App.module.css';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.appContainer}>
+      <h1>MY AVAILABILITY FOR THE NEXT 4 WEEKS</h1>
+      <RangeSlider weekLabel="WEEK 1"/>
+      <RangeSlider weekLabel="WEEK 2"/>
+      <RangeSlider weekLabel="WEEK 3"/>
+      <RangeSlider weekLabel="WEEK 4"/>
+      <Button variant="contained">Save</Button>
     </div>
   );
 }
