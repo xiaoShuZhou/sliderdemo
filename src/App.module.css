@@ -5,3 +5,19 @@
   gap: 20px;
   padding: 20px;
 }
+
+/* For medium-sized screens */
+@media (max-width: 768px) {
+  .appContainer {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+/* For small screens */
+@media (max-width: 480px) {
+  .appContainer {
+    gap: 10px;
+    padding: 10px;
+  }
+}
